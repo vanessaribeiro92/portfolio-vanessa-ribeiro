@@ -1,0 +1,17 @@
+.nav-primary .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.carousel-banner {
+  margin-top: 56px;
+  height: 80vh;
+}
+
+.carousel-banner img {
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

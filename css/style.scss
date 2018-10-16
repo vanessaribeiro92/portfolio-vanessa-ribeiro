@@ -1,0 +1,13 @@
+.nav-primary .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.carousel-banner {
+    margin-top: 56px;
+    height: 80vh;
+
+    img {
+        height: 80vh;
+        object-fit: cover;
+    }
+}
