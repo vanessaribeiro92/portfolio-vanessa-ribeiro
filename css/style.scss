@@ -1,13 +1,107 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color: black; 
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color:rgba(225,225,225,0.5);
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+
 .nav-primary .navbar-collapse {
     justify-content: flex-end;
 }
 
-.carousel-banner {
-    margin-top: 56px;
+
+.carousel-inner {
+    margin-top: 0px;
     height: 80vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 
     img {
         height: 80vh;
         object-fit: cover;
+    }
+}
+
+.header .navbar-brand {
+    text-indent: -99999px;
+    background: url(../assets/logoVanessa2.png) no-repeat center center;
+    background-size: contain;
+    width: 25%;
+    height: 80px;
+   
+}
+.navbar-brandMini{
+    text-indent: -99999px;
+    background: url(../assets/logoVanessa.png) no-repeat center center;
+    background-size: contain;
+    width: 25%;
+    height: 80px;
+    display: none;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.nav-item {
+    padding: 0 5.5rem 0 0;
+}
+.header .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+}
+
+.progress-bar {
+    justify-content: space-around;
+}
+
+.progress{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+span.error{
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+    letter-spacing: 0.5px;
+}
+
+input.error,  textarea.error {
+    border-color: red;
+}
+
+@media screen and (max-width: 700px){
+
+    .header .navbar-brand {
+        text-indent: -99999px;
+        background: url(../assets/logoVanessa.png) no-repeat center center;
+        background-size: contain;
+        width: 15%;
+        height: 70px;
     }
 }
