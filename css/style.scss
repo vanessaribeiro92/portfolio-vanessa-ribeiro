@@ -1,14 +1,22 @@
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    color: black; 
-}
-
 *{
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(13, 7, 95); 
+}
+
 .navbar {
-    background-color:rgba(225,225,225,0.5);
+    background-color:rgba(225,225,225,0.35);
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
 }
 
 .header {
@@ -19,22 +27,8 @@ body{
     width: 100%;
 }
 
-.nav-primary .navbar-collapse {
+.header .navbar-collapse {
     justify-content: flex-end;
-}
-
-
-.carousel-inner {
-    margin-top: 0px;
-    height: 80vh;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-
-    img {
-        height: 80vh;
-        object-fit: cover;
-    }
 }
 
 .header .navbar-brand {
@@ -44,14 +38,6 @@ body{
     width: 25%;
     height: 80px;
    
-}
-.navbar-brandMini{
-    text-indent: -99999px;
-    background: url(../assets/logoVanessa.png) no-repeat center center;
-    background-size: contain;
-    width: 25%;
-    height: 80px;
-    display: none;
 }
 
 .navbar-brand {
@@ -65,13 +51,23 @@ body{
 }
 .nav-item {
     padding: 0 5.5rem 0 0;
-}
-.header .navbar-collapse {
-    justify-content: flex-end;
+    font-weight: bold;
 }
 
 .navbar-light .navbar-brand {
     color: rgba(0,0,0,.9);
+}
+.carousel-inner {
+    margin-top: 0px;
+    height: 80vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+        height: 80vh;
+        object-fit: cover;
+    }
 }
 
 .progress-bar {
@@ -83,6 +79,75 @@ body{
     font-weight: bold;
 }
 
+.portfolio .col {
+    padding: 0;
+    background: black;
+    position: relative;
+    cursor:pointer;
+}
+.portfolio .portfolio-img {
+    width: 100%;
+    height: 400px;
+    object-position: center;
+    object-fit: cover;
+    opacity: 0.6;
+    
+}
+.portfolio .portfolio-hover {
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+.portfolio .portfolio-hover a {
+    font-size: 30px;
+    text-decoration:none;
+    letter-spacing: 4px;
+}
+
+.portfolio .portfolio-hover a:hover {
+    transform:scale(1.4);
+    transition: all .8s;
+}
+
+.portfolio .col:hover .portfolio-hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.title-section {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+#contato {
+    margin-top: 150px;
+    min-height: 60vh;
+}
+
+.contact {
+    background: #f8f9fa;
+}
+
+.contact p {
+    margin-top: 50px;
+}
+
+.form-contact {
+    width: 65%;
+    margin: 0 auto;
+}
 
 span.error{
     font-size: 14px;
@@ -95,6 +160,21 @@ input.error,  textarea.error {
     border-color: red;
 }
 
+footer {
+    margin-top: 150px;
+    background-color:#237ebea3;
+}
+
+footer i {
+    margin: 3px;
+    font-size: 28px;
+    color: black;
+}
+
+footer i:hover{
+    opacity: 0.5;
+}
+
 @media screen and (max-width: 700px){
 
     .header .navbar-brand {
@@ -104,4 +184,26 @@ input.error,  textarea.error {
         width: 15%;
         height: 70px;
     }
+}
+
+#arrowTop {    
+    color: #211c24d2;
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#arrowTop::before {
+  content: hidden;
+}
+
+#arrowTop:hover {
+    color: rgb(50, 48, 51);
+    transition: 0.3s;
 }

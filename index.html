@@ -7,6 +7,7 @@
     <title>Portifolio - Vanessa Ribeiro</title>
     <!--font-->
     <!-- CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -24,13 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="header-navbar-list navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Mim</a>
+                        <a class="nav-link" href="https://vanessaribeiro92.github.io/#about">Sobre Mim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfólio</a>
+                        <a class="nav-link" href="https://vanessaribeiro92.github.io/#portfolio">Portfólio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="https://vanessaribeiro92.github.io/#contact">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -53,13 +54,12 @@
     </section>
 
     <!--about me-->
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <p class="title-section">Sobre mim</p>
-            <p class="text-section">Uma pessoa que ama a tecnologia, robótica, games, filmes, volei e viajar! <br> Formada em Engenharia Mecatrônica,
-                com experiência em programação em robótica, planejamento e controle de manutenção, auditorias de qualidade,
+            <p class="text-section">Uma pessoa que ama a tecnologia, robótica, games, filmes, volei e viajar! <br> Formada em Engenharia Mecatrônica, com experiência em programação em robótica, planejamento e controle de manutenção, auditorias de qualidade,
                 e há 6 meses se aprofundando em programação de web como Desenvolvedora Front-End.
-                <br> Participei do curso da {reprograma} from Facebook, 18 semanas, integral e intensivo em formação de desevolvedoras front-end. Adiquiri conheciment e experiência em HTML, CSS, SASS, Javascript, jquery, Bootstrap, Responsivo, github, git, React, acessibilidade, UX, ...  </p>
+                <br> Participei do curso da {reprograma} from Facebook, 18 semanas, integral e intensivo para formação de desevolvedoras front-end. Adiquiri conhecimento e experiência em HTML, CSS, SASS, Javascript, jquery, Bootstrap, Responsivo, github, git, React, acessibilidade, UX, ...  </p>
             <div class="skills">
                 <div class="progress mb-2">
                     <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100"
@@ -105,46 +105,57 @@
         </div>
     </section>
     <!-- portfolio -->
-    <section class="portfolio">
-        <p class="title-section">Portfólio</p>
+    <section id="portfolio" class="portfolio mt-5">
         <div class="container">
+            <h2 class="title-section">Portfólio</h2>
+
+            <!-- Mundo Gelado -->
             <div class="row">
                 <div class="col">
-                    <img class="portfolio-img" src="assets/img/hit.jpg" alt="">
+                    <img class="portfolio-img" src="assets/mundo-gelado.jpg" alt="">
                     <div class="portfolio-hover">
-                        <p>Mais informações</p>
-                        <button type="button" class="btn btn-outline-primary btn-lg rounded-circle" data-toggle="modal" data-target="#modal-hit">
+                        <a class="text-light lead" href="https://github.com/vanessaribeiro92/web-mundo-gelado/blob/master/index.html">Mais informações</a>
+
+                        <button type="button" class="btn btn-outline-primary btn-lg rounded-circle" data-toggle="modal" data-target="#modal-mundoGelado">
                             +
                         </button>
                     </div>
                 </div>
             </div>
+
+            <!-- M de Maravilhosa -->
             <div class="row">
                 <div class="col">
-                    <img class="portfolio-img" src="assets/img/giovana.jpg" alt="">
+                    <img class="portfolio-img" src="assets/m-de-maravilhosa.jpg" alt="">
                     <div class="portfolio-hover">
-                        <p>Mais informações</p>
-                        <button type="button" class="btn btn-outline-primary btn-lg rounded-circle" data-toggle="modal" data-target="#modal-giovana">
+                        <a class="text-light lead" href="https://github.com/vanessaribeiro92/projeto-m-de-maravilhosa">Mais informações</a>
+
+                        <button type="button" class="btn btn-outline-primary btn-lg rounded-circle" data-toggle="modal" data-target="#modal-maravilhosa"> 
                             +
                         </button>
                     </div>
                 </div>
+
+                <!-- Projeto Booststrap -->
                 <div class="col">
-                    <img class="portfolio-img" src="assets/img/idg.jpg" alt="">
+                    <img class="portfolio-img" src="assets/projeto-bootstrap.jpg" alt="">
                     <div class="portfolio-hover">
-                        <p>Mais informações</p>
-                        <button type="button" class="btn btn-outline-primary btn-lg rounded-circle" data-toggle="modal" data-target="#modal-idg">
+                            <a class="text-light lead" href="https://github.com/vanessaribeiro92/bootstrap">Mais informações</a>
+
+                        <button type="button" class="btn btn-outline-primary btn-lg rounded-circle" data-toggle="modal" data-target="#modal-bootstrap">
                             +
                         </button>
                     </div>
                 </div>
             </div>
+
+            <!-- Portfolio Vanessa R. -->
             <div class="row">
                 <div class="col">
-                    <img class="portfolio-img" src="assets/img/boaretto.jpg" alt="">
+                    <img class="portfolio-img" src="assets/portfolio-vr.jpg" alt="">
                     <div class="portfolio-hover">
-                        <p>Mais informações</p>
-                        <button type="button" class="btn btn-outline-primary btn-lg rounded-circle" data-toggle="modal" data-target="#modal-boaretto">
+                         <a class="text-light lead" href="https://vanessaribeiro92.github.io/">Mais informações</a>
+                        <button type="button" class="btn btn-outline-primary btn-lg rounded-circle" data-toggle="modal" data-target="#modal-portfoliovanessaribeiro">
                             +
                         </button>
                     </div>
@@ -154,7 +165,7 @@
     </section>
 
     <!-- contact -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <p class="title-section">Contato</p>
             <form class="form-contact" name="contact" netlify="">
@@ -180,96 +191,109 @@
     </section>
 
     <!--Modal do portfolio-->
-    <div class="modal modal-hit" id="modal-hit" tabindex="-1" role="dialog">
+    <!--Mundo Gelado -->
+    <div class="modal modal-mundoGelado" id="modal-mundoGelado" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Hit Roller Derby</h5>
+                    <h5 class="modal-title">Mundo Gelado</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <p class="modal-subtitle">Sobre o projeto:</p>
-                    <p class="modal-text">Landing Page do HIT, evento de roller derby que aconteceu em São Paulo/SP</p>
+                    <p class="modal-text">Trabalho realizado no {reprograma} São Paulo/SP</p>
                     <p class="modal-subtitle">Linguagens:</p>
-                    <p class="modal-text">Html, Css, Javascript, Less, Bootstrap e Jquery</p>
+                    <p class="modal-text">Html e Css</p>
                     <p class="modal-subtitle">Ver projeto:</p>
-                    <a class="text-dark" href="https://dutra21.github.io/hitrollerderby/" target="_blank">Clique aqui</a>
+                    <a class="text-dark" href="https://github.com/vanessaribeiro92/web-mundo-gelado" target="_blank">Clique aqui</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal modal-idg" id="modal-idg" tabindex="-1" role="dialog">
+    <!-- M de Maravilgosa -->
+    <div class="modal modal-maravilhosa" id="modal-maravilhosa" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Instituto Dominique Geiger</h5>
+                    <h5 class="modal-title">M de Maravilhosa</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <p class="modal-subtitle">Sobre o projeto:</p>
-                    <p class="modal-text">Site do Instituto Dominique Geiger</p>
+                    <p class="modal-text">Trabalho realizado no {reprograma} São Paulo/SP</p>
                     <p class="modal-subtitle">Linguagens:</p>
-                    <p class="modal-text">Html, Css, Javascript, Less, Jquery e Gulp</p>
+                    <p class="modal-text">Html e Css</p>
                     <p class="modal-subtitle">Ver projeto:</p>
-                    <a class="text-dark" href="https://instituto-dg.org.br/" target="_blank">Clique aqui</a>
+                    <a class="text-dark" href="https://github.com/vanessaribeiro92/projeto-m-de-maravilhosa" target="_blank">Clique aqui</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal modal-giovana" id="modal-giovana" tabindex="-1" role="dialog">
+    <!-- Projeto Booststrap -->
+    <div class="modal modal-bootstrap" id="modal-bootstrap" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Giovana Ansoain</h5>
+                    <h5 class="modal-title">Modern Bussines</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <p class="modal-subtitle">Sobre o projeto:</p>
-                    <p class="modal-text">Portfolio profissional da designer Giovana Ansoain</p>
+                    <p class="modal-text">Trabalho realizado no {reprograma} São Paulo/SP</p>
                     <p class="modal-subtitle">Linguagens:</p>
-                    <p class="modal-text">Html, Css, Javascript, Jekyll, Sass e Jquery</p>
+                    <p class="modal-text">Html, Css, Javascript, Bootstrap e Jquery</p>
                     <p class="modal-subtitle">Ver projeto:</p>
-                    <a class="text-dark" href="http://giovana.cc" target="_blank">Clique aqui</a>
+                    <a class="text-dark" href="https://github.com/vanessaribeiro92/bootstrap" target="_blank">Clique aqui</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal modal-boaretto" id="modal-boaretto" tabindex="-1" role="dialog">
+    <!-- Portfolio Vanessa R. -->
+    <div class="modal modal-portfoliovanessaribeiro" id="modal-portfoliovanessaribeiro" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Enrico Boaretto</h5>
+                    <h5 class="modal-title">Portfolio - Vanessa Ribeiro</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <p class="modal-subtitle">Sobre o projeto:</p>
-                    <p class="modal-text">Site de e-commerce da marca de sapato Enrico Boaretto</p>
+                    <p class="modal-text">Trabalho realizado no {reprograma} São Paulo/SP</p>
                     <p class="modal-subtitle">Linguagens:</p>
-                    <p class="modal-text">Html, Css, Javascript, Less, Gulp e Jquery</p>
+                    <p class="modal-text">Html, Css, Javascript, Jquery e SASS</p>
                     <p class="modal-subtitle">Ver projeto:</p>
-                    <a class="text-dark" href="https://enricoboaretto.com" target="_blank">Clique aqui</a>
+                    <a class="text-dark" href="https://vanessaribeiro92.github.io/" target="_blank">Clique aqui</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--Footer--> 
+    <footer class="footer py-5" id="footer">
+        <div class="d-flex justify-content-center">
+          <a href="https://www.linkedin.com/in/vanessa-s-o-ribeiro/" target="blank_"> <i class="fab fa-linkedin" ></i></a>
+          <a href="https://github.com/vanessaribeiro92" target="blank_" ><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter" target="blank_" ></i></a>
+        </div>
+      </footer>
+      <button id="arrowTop" hidden><i class="fas fa-arrow-up"></i></button>
 
 
     <!--js-->
     <!--coloca o jquery aqui primeiro-->
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <!--Depois vem o bootstrap-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
