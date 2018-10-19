@@ -226,7 +226,7 @@ footer i {
   color: black;
 }
 
-footer i :hover {
+footer i:hover {
   opacity: 0.5;
 }
 
