@@ -19,27 +19,6 @@ body{
     justify-content: flex-end;
 }
 
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    width: 100%;
-}
-
-.header .navbar-collapse {
-    justify-content: flex-end;
-}
-
-.header .navbar-brand {
-    text-indent: -99999px;
-    background: url(../assets/logoVanessa2.png) no-repeat center center;
-    background-size: contain;
-    width: 25%;
-    height: 80px;
-   
-}
-
 .navbar-brand {
     display: inline-block;
     padding-top: .3125rem;
@@ -57,6 +36,27 @@ body{
 .navbar-light .navbar-brand {
     color: rgba(0,0,0,.9);
 }
+
+.header .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.header .navbar-brand {
+    text-indent: -99999px;
+    background: url(../assets/logoVanessa2.png) no-repeat center center;
+    background-size: contain;
+    width: 25%;
+    height: 80px;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+
 .carousel-inner {
     margin-top: 0px;
     height: 80vh;
@@ -72,6 +72,8 @@ body{
 
 .progress-bar {
     justify-content: space-around;
+    text-align: start;
+    padding-left: 5px;
 }
 
 .progress{
@@ -85,6 +87,7 @@ body{
     position: relative;
     cursor:pointer;
 }
+
 .portfolio .portfolio-img {
     width: 100%;
     height: 400px;
@@ -93,6 +96,7 @@ body{
     opacity: 0.6;
     
 }
+
 .portfolio .portfolio-hover {
     opacity: 0;
     transition: all 0.5s;
@@ -129,14 +133,16 @@ body{
     text-transform: uppercase;
     font-size: 25px;
     margin-bottom: 40px;
+    font-family: 'Handlee',Arial, Helvetica, sans-serif;
 }
 
 .text-section {
     p {
         width: 600px;
         text-align: justify;
+        font-family: 'Lora',Arial, Helvetica, sans-serif;
     }
-
+    
     .skills{
         width: 600px;
     }
@@ -150,20 +156,28 @@ body{
     .foto-perfil {
         flex-grow: 0;
         flex-basis: 25%;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
-#contato {
+.portfolio{
+    a {
+        text-align: center;
+    }
+}
+
+#contact {
     margin-top: 150px;
     min-height: 60vh;
 }
 
 .contact {
     background: #f8f9fa;
-}
 
-.contact p {
-    margin-top: 50px;
+    p {
+        margin-top: 50px;
+    }
 }
 
 .form-contact {
@@ -185,16 +199,21 @@ input.error,  textarea.error {
 footer {
     margin-top: 150px;
     background-color:#237ebea3;
+
+    i{
+        margin: 3px;
+        font-size: 28px;
+        color: black;
+
+        :hover{
+            opacity: 0.5;
+        }
+    }
 }
 
-footer i {
-    margin: 3px;
-    font-size: 28px;
-    color: black;
-}
-
-footer i:hover{
-    opacity: 0.5;
+.copyright {
+    font-size: 13px;
+    font-style: italic;
 }
 
 @media screen and (max-width: 700px){
@@ -215,6 +234,7 @@ footer i:hover{
         .foto-perfil {
             flex-grow: 0;
             flex-basis: 25%;
+            margin: 0 auto;
         }
     }
 }
