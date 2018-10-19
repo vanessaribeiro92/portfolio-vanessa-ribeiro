@@ -131,6 +131,28 @@ body{
     margin-bottom: 40px;
 }
 
+.text-section {
+    p {
+        width: 600px;
+        text-align: justify;
+    }
+
+    .skills{
+        width: 600px;
+    }
+}
+
+#about {
+    .container {
+        max-width: 900px;
+    }
+    
+    .foto-perfil {
+        flex-grow: 0;
+        flex-basis: 25%;
+    }
+}
+
 #contato {
     margin-top: 150px;
     min-height: 60vh;
@@ -184,6 +206,17 @@ footer i:hover{
         width: 15%;
         height: 70px;
     }
+
+    #about {
+        .container {
+            max-width: 900px;
+        }
+        
+        .foto-perfil {
+            flex-grow: 0;
+            flex-basis: 25%;
+        }
+    }
 }
 
 #arrowTop {    
@@ -207,3 +240,5 @@ footer i:hover{
     color: rgb(50, 48, 51);
     transition: 0.3s;
 }
+
+

@@ -155,6 +155,27 @@ body {
   margin-bottom: 40px;
 }
 
+.text-section p {
+  width: 600px;
+  text-align: justify;
+}
+
+.text-section .skills {
+  width: 600px;
+}
+
+#about .container {
+  max-width: 900px;
+}
+
+#about .foto-perfil {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
 #contato {
   margin-top: 150px;
   min-height: 60vh;
@@ -206,6 +227,16 @@ footer i:hover {
     background-size: contain;
     width: 15%;
     height: 70px;
+  }
+  #about .container {
+    max-width: 900px;
+  }
+  #about .foto-perfil {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
   }
 }
 
