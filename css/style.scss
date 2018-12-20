@@ -148,14 +148,15 @@ body{
 
 .text-section {
     p {
-        width: 600px;
+      // width: 600px;
+        width: 740px;
         text-align: justify;
         font-family: 'Lora',Arial, Helvetica, sans-serif;
     }
     
-    .skills{
-        width: 600px;
-    }
+    // .skills{
+    //     width: 600px;
+    // }
 }
 
 #about {
@@ -236,23 +237,26 @@ footer {
         height: 70px;
     }
 
-    #about {
+  #about {
 
-        .container {
-            max-width: 623px;
-        }
-        .text-section {
-            p{
-                width: 586px;
-            }
-
-        }
-        .foto-perfil {
-            flex-grow: 0;
-            flex-basis: 25%;
-            margin: 0 auto;
-        }
+    .container {
+        // max-width: 623px;
+        max-width: 100%;
     }
+    .text-section {
+      p{
+        width: 353px;
+        // width: 586px;
+      }
+
+    }
+    .foto-perfil {
+      flex-grow: 0;
+      flex-basis: 30%;
+      // flex-basis: 25%;
+      margin: 0 auto;
+    }
+  }
 }
 
 #arrowTop {    
