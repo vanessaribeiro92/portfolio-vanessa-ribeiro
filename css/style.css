@@ -255,7 +255,7 @@ footer i:hover {
     -ms-flex-positive: 0;
     flex-grow: 0;
     -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
+    flex-basis: 50%;
     margin: 0 auto;
   }
 }
